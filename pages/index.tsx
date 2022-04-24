@@ -11,6 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import Image from "next/image";
+import { PokemonImage } from "../src/PokemonImage";
 
 const Pokemon: NextPage = () => {
   const [id, setId] = useState("1");
@@ -54,26 +55,8 @@ const Pokemon: NextPage = () => {
           </Typography>
         </Box>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
-          {spriteFront ? (
-            <Image
-              src={spriteFront}
-              alt="pokemon sprite front"
-              width={150}
-              height={150}
-            />
-          ) : (
-            <Skeleton variant="rectangular" width={150} height={150} />
-          )}
-          {spriteBack ? (
-            <Image
-              src={spriteBack}
-              alt="pokemon sprite back"
-              width={150}
-              height={150}
-            />
-          ) : (
-            <Skeleton variant="rectangular" width={150} height={150} />
-          )}
+          <PokemonImage src={spriteFront} alt="pokemon sprite front" />
+          <PokemonImage src={spriteBack} alt="pokemon sprite back" />
         </Box>
         <Typography variant="h4" sx={{ textAlign: "center" }}>
           {spriteName}
