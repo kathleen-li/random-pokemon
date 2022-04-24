@@ -16,6 +16,7 @@
     "@emotion/styled": "latest",
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
+    "axios": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
@@ -25,6 +26,7 @@
     "@types/react": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "prettier": "latest",
     "typescript": "latest"
   }
 }
